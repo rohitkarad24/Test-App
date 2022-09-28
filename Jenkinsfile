@@ -10,7 +10,7 @@ pipeline {
 		}
 		stage ('start httpd') {
 			steps {
-				sh "service start httpd"
+				sh "systemctl start httpd"
 			}
 		}
 		stage ('deploy index') {
