@@ -15,7 +15,7 @@ pipeline {
 		}
 		stage ('deploy index') {
 			steps {
-				sh "cd -r index.html /var/www/html"
+				sh "cp -r index.html /var/www/html"
 				sh "chmod -R 777 /var/www/html/index.html"
 			}
 		}
